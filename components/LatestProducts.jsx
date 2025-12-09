@@ -135,7 +135,7 @@ const ProductCard = ({ product }) => {
         <h3 className="text-xs sm:text-sm font-medium text-gray-800 line-clamp-2 mb-1">
           {productName}
         </h3>
-        
+        {/* Only show rating and review count, no date or initials */}
         <div className="flex items-center mb-0">
           <>
             {[...Array(5)].map((_, i) => (
