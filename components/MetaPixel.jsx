@@ -20,9 +20,22 @@ export default function MetaPixel() {
       s.parentNode.insertBefore(t, s);
     })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
 
-    window.fbq && window.fbq("init", "");
-    window.fbq && window.fbq("track", "PageView");
+      window.fbq && window.fbq("init", "846373054802717");
+      window.fbq && window.fbq("track", "PageView");
   }, []);
 
-  return null;
+    return (
+      <>
+        {/* Meta Pixel noscript fallback */}
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=846373054802717&ev=PageView&noscript=1"
+            alt="Meta Pixel"
+          />
+        </noscript>
+      </>
+    );
 }
